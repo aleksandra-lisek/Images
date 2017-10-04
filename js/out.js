@@ -70,7 +70,20 @@
 "use strict";
 
 
-document.addEventListener("DOMContentLoaded", function () {});
+document.addEventListener("DOMContentLoaded", function () {
+    // console.log('hhhhhhhhhhhhhhhh');
+
+    var gallery = document.querySelectorAll('.panel');
+
+    function addClass() {
+        console.log('tralalalalal');
+        this.classList.toggle('open');
+    }
+
+    gallery.forEach(function (img) {
+        return img.addEventListener("click", addClass);
+    });
+});
 
 /***/ })
 /******/ ]);
