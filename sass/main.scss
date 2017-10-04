@@ -1,0 +1,50 @@
+
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #000000;
+    font-size: 3rem;
+    // font-weight: bold;
+    color: #ffffff;
+    height: 8rem;
+    margin: -1.5rem;
+    padding: 1rem;
+    text-align: center;
+
+
+    .title{
+        margin: 0rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.gallery{
+    height: 80vh;
+    display: flex;
+    width: 100vw;
+
+    .image1{
+        background-image: url("../images/bird.jpg");
+        background-position: center;
+        flex:1;
+    }
+    .image2{
+        background-image: url("../images/dog.jpg");
+        background-position: center;
+        flex:1;
+    }
+    .image3{
+        background-image: url("../images/fox.jpg");
+        background-position: center;
+        flex:1;
+    }
+    .image4{
+        background-image: url("../images/penguin.jpg");
+        background-position: center;
+        flex:1;
+    }
+}
