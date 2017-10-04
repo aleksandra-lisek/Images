@@ -3,13 +3,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const gallery = document.querySelectorAll('.panel');
 
-        function addClass() {
-            console.log('tralalalalal');
-            this.classList.toggle('open')
+    const names = document.querySelectorAll('p');
+    console.log(names);
 
+        function addClassImg() {
+            this.classList.toggle('open');
         }
 
-        gallery.forEach( img => img.addEventListener("click", addClass))
+
+        gallery.forEach( img => img.addEventListener("click", addClassImg));
+
 
 
 });

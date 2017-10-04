@@ -5,7 +5,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+
     // background-color: #000;
 }
 
@@ -51,17 +51,20 @@ header{
         justify-content: center;
         align-items: center;
         color: rgb(209, 17, 115);
-
-        .name{
-            transform: translateY(-50rem);
-        }
-
-        .name-open{
-            transform: translateY(0);
-        }
     }
 
     .open{
         flex:5;
+    }
+}
+
+.container{
+    margin: 5rem 10rem 0 10rem;
+    .name{
+        font-size:8rem ;
+    }
+    .text{
+        font-size: 3rem;
+
     }
 }

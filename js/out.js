@@ -75,13 +75,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var gallery = document.querySelectorAll('.panel');
 
-    function addClass() {
-        console.log('tralalalalal');
+    var names = document.querySelectorAll('p');
+    console.log(names);
+
+    function addClassImg() {
         this.classList.toggle('open');
     }
 
     gallery.forEach(function (img) {
-        return img.addEventListener("click", addClass);
+        return img.addEventListener("click", addClassImg);
     });
 });
 
