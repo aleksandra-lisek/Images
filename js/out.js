@@ -80,7 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function scrollDown(number) {
         // const number = this.dataset.number;
-        document.querySelector('.animal-' + number).scrollIntoView({ behavior: "smooth" });
+        document.querySelector('.animal-' + number).scrollIntoView({
+            behavior: "smooth"
+        });
     }
 
     function addClassImg() {
