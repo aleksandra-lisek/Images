@@ -78,12 +78,25 @@ document.addEventListener("DOMContentLoaded", function () {
     var names = document.querySelectorAll('p');
     console.log(names);
 
-    function addClassImg() {
-        this.classList.toggle('open');
+    function scrollDown(number) {
+        // const number = this.dataset.number;
+        document.querySelector('.animal-' + number).scrollIntoView({ behavior: "smooth" });
     }
 
-    gallery.forEach(function (img) {
-        return img.addEventListener("click", addClassImg);
+    function addClassImg() {
+        var number = this.dataset.number;
+        this.classList.toggle('open');
+        document.querySelector('.animal-' + number).classList.toggle('show');
+        window.setTimeout(function () {
+            scrollDown(number);
+        }, 500);
+    }
+
+    gallery.forEach(function (ele) {
+        return ele.addEventListener("click", addClassImg);
+    });
+    gallery.forEach(function (ele) {
+        return ele.addEventListener("transitionend", scrollDown);
     });
 });
 
